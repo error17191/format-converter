@@ -1,0 +1,29 @@
+{
+  "name": "configconverter",
+  "version": "1.0.0",
+  "description": "Converts between different data formats: Json / XML / YAML",
+  "scripts": {
+    "test": "jest",
+    "build:cli": "npx tsc",
+    "postbuild:cli": "cp src/cli.txt dist/cli.txt",
+    "run:cli": "node dist/cli.js",
+    "dev:cli": "npx tsc-watch --onSuccess \"npm run postbuild:cli\""
+  },
+  "author": "Mohamed Younes",
+  "license": "ISC",
+  "dependencies": {
+    "docopt": "^0.6.2",
+    "fast-xml-parser": "^4.3.2",
+    "xmlbuilder2": "^3.1.1",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/docopt": "^0.6.35",
+    "@types/jest": "^29.5.7",
+    "@types/node": "^20.8.10",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}

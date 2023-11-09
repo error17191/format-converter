@@ -1,0 +1,12 @@
+Usage:
+  converter --input=<input-path> [--output=<output-path>] [--input-format=<input-format>] [--output-format=<output-format>]
+  converter (-h | --help)
+  converter --version
+
+Options:
+  -h --help                               Show this screen.
+  --version                               Show version.
+  --input=<input-path>                    Path to the input file to be converted.
+  --output=<output-path>                  Path where the converted file will be saved.
+  --input-format=<input-format>           Format of the input file. Guessed from the file extension if not provided.
+  --output-format=<output-format>         Format for the output file. Guessed from the output file extension if not provided.
